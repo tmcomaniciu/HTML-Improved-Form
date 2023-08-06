@@ -14,16 +14,21 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <label for="firstname">Your First Name<span class="required-field">*</span></label>
+                <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="35">
+                <label for="lastname">Your Last Name<span class="required-field">*</span></label>
+                <input type="text" id="lastname" name="lastname" required minlength="2" maxlength="35">
+                <label for="age">Your Age<span class="required-field">*</span></label>
+                <input type="number" id="age" name="age" required min="21" max="120">
+                <h5>You must be at least 21 to enter!</h5>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email">
+                    <label for="email">Your Email<span class="required-field">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Your Secret Code (6 alphanumeric characters)<span class="required-field">*</span></label>
+                    <input type="password" id="password" minlength="6" maxlength="6" required>
                 </div>
                 <div>
                     <label for="address">Your Street Address</label>
@@ -86,7 +91,7 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="text" id="zip" name="zip">
+                    <input type="number" id="zip" name="zip">
                 </div>
             </fieldset>
 
@@ -95,19 +100,23 @@
                 <h3>Choose your location</h3>
                 <div>
                     <input type="radio" id="aruba" name="location" value="Aruba" checked> 
-                    <label for="aruba">Aruba</label>
+                    <label for="aruba">Aruba</label><br>
+                    <img class="mini-image" src="assets/images/aruba.jpg">
                 </div>
                 <div>
                     <input type="radio" id="japan" name="location" value="Japan"> 
-                    <label for="japan">Japan</label>
+                    <label for="japan">Japan</label><br>
+                    <img class="mini-image" src="assets/images/japan.jpg">
                 </div>
                 <div>
                     <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
-                    <label for="reykjavik">Reykjavik</label>
+                    <label for="reykjavik">Reykjavik</label><br>
+                    <img class="mini-image" src="assets/images/iceland.jpg">
                 </div>
                 <div>
                     <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
-                    <label for="new-zealand">New Zealand</label>
+                    <label for="new-zealand">New Zealand</label><br>
+                    <img style="width:120px" height="90px" object-fill="fill" src="assets/images/new-zealand.jpg">
                 </div>
                 <div>
                     <label for="color">Favorite Color</label>

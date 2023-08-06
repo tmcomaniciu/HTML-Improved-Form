@@ -67,8 +67,8 @@ label {
 
 .mini-image {
     height: auto;
-    width: 100%;
-}
+    width: 22%;
+    }
 
 .required-field {
     color: red;
